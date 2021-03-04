@@ -1,8 +1,8 @@
 
 //Call dependencies
 const inquirer = require('inquirer');
-const generateHTML = require('./src/profiler');
-const generateEmp = require('./src/profiler');
+const { generateHTML, generateEmp } = require('./src/profiler');
+// const generateEmp = require('./src/profiler');
 const fs = require("fs");
 
 //Prompts for getting an employee's information
@@ -87,10 +87,9 @@ async function init() {
    if (input.addAnother) {
       init();
    } else {
-      console.log(employees);
-      // let data = JSON.stringify(generateHTML(employees));
+
       //Write index.html file by passing the employees array into the generateHTML function
-      fs.writeFile(".dist/index.html", generateHTML(employees), err => err && console.error(err));
+      fs.writeFile("./dist/index.html", generateHTML(employees), err => err && console.error(err));
    }
 
 }
