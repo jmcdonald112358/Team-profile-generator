@@ -1,4 +1,4 @@
-//This file contains the template helper code for generating the employee profiles 
+//This file contains the template helper code for generating the individual employee profiles as well as generating the target HTML file with the full collection of responses
 
 //Call dependencies
 const Manager = require("../lib/Manager");

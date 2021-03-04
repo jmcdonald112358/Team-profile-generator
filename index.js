@@ -1,8 +1,6 @@
-
 //Call dependencies
 const inquirer = require('inquirer');
 const { generateHTML, generateEmp } = require('./src/profiler');
-// const generateEmp = require('./src/profiler');
 const fs = require("fs");
 
 //Prompts for getting an employee's information
@@ -70,22 +68,23 @@ const questions = [
 
 ]
 
-//Array to store employee objects as they're created
+//Empty array to store employee objects as they're created
 const employees = [];
 
-//function to initialize program
+//Function to initialize program
 async function init() {
 
    //Initiate prompts for employee info
    const input = await inquirer.prompt(questions);
    
-   //Generate employee object and push into employees array
+   //Generate employee object from response and push into employees array
    let newEmp = generateEmp(input);
    employees.push(newEmp);
 
    //Prompt to add another employee and restart function if yes
    if (input.addAnother) {
       init();
+
    } else {
 
       //Write index.html file by passing the employees array into the generateHTML function
