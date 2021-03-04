@@ -42,3 +42,6 @@ Navigate to the corresponding directory in your terminal and run ```npm test```
 ### Questions
 If you have any questions about the project, please feel free to message at **jmcdonald112358@gmail.com**, or connect with me on GitHub: **[jmcdonald112358](https://github.com/jmcdonald112358)**
 
+### Links
+- [Walkthrough video](https://drive.google.com/file/d/1lp-3PYrvVb2GDo3QyVXmdVChZZJESFeM/view)
+- [Repository](https://github.com/jmcdonald112358/Team-profile-generator)
