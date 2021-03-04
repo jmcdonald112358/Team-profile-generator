@@ -89,6 +89,7 @@ async function init() {
 
       //Write index.html file by passing the employees array into the generateHTML function
       fs.writeFile("./dist/index.html", generateHTML(employees), err => err && console.error(err));
+      console.log("Team Profile page generated successfully!")
    }
 
 }
