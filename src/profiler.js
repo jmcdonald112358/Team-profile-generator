@@ -12,17 +12,14 @@ function generateEmp (input) {
 
    if (employeeType === 'Manager') {
       let manager = generateManager(input);
-      console.log(manager);
       return manager;
    }
    else if (employeeType === 'Engineer') {
       let engineer = generateEngineer(input);
-      console.log(engineer);
       return engineer;
    }
    else if (employeeType === 'Intern') {
       let intern = generateIntern(input);
-      console.log(intern);
       return intern;
    }
 
@@ -87,7 +84,7 @@ function generateHTML (input) {
    for (let i = 0; i < input.length; i++) {
       if (input[i].role === 'Manager') {
          managers += `
-         <div class="card has-background-info-dark">
+         <div class="card has-background-info-dark has-text-left is-size-5 mb-4">
             <header class="card-header">
                <p class="card-header-title">
                   <span class="icon is-size-3 mr-4">
@@ -107,7 +104,7 @@ function generateHTML (input) {
          `
       } else if (input[i].role === 'Engineer') {
          engineers += `
-         <div class="card has-background-success-dark">
+         <div class="card has-background-success-dark has-text-left is-size-5 mb-4">
             <header class="card-header">
                <p class="card-header-title">
                   <span class="icon is-size-3 mr-4">
@@ -127,7 +124,7 @@ function generateHTML (input) {
          `
       } else if (input[i].role === 'Intern') {
          interns += `
-         <div class="card has-background-warning-dark">
+         <div class="card has-background-warning-dark has-text-left is-size-5 mb-4">
             <header class="card-header">
                <p class="card-header-title">
                   <span class="icon is-size-3 mr-4">
@@ -149,7 +146,7 @@ function generateHTML (input) {
    }
 
    //Return the full formatted HTML content, passing in the employee type strings in the appropriate places
-   return `
+   return (`
    <!DOCTYPE html>
    <html class="has-background-grey-dark">
       <head>
@@ -168,33 +165,46 @@ function generateHTML (input) {
          
          <div class="container is-fluid">
             <div class="tile is-ancestor mb-6">
+
                <!-- Manager column -->
                <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
-                  <div class="tile is-child is-size-3 has-text-centered has-background-grey-dark has-text-grey-light">
-                     <p>Manager(s)</p>
-                  </div>
-                  <div class="tile is-child has-background-grey-dark">
-                     ${managers}
+                  <div class="card has-background-grey-dark is-shadowless has-text-centered">
+                     <div class="card has-background-grey-darker is-shadowless is-size-3 has-text-grey-light mb-4">
+                        <div class="card-content">
+                           <div class="content">
+                              <p>Management</p>
+                           </div>
+                           ${managers}
+                        </div>
+                     </div>
                   </div>
                </div>
    
                <!-- Engineer column -->
                <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
-                  <div class="tile is-child is-size-3 has-text-centered has-background-grey-dark has-text-grey-light">
-                     <p>Engineer(s)</p>
-                  </div>
-                  <div class="tile is-child has-background-grey-dark">
-                     ${engineers}
+                  <div class="card has-background-grey-dark is-shadowless has-text-centered">
+                     <div class="card has-background-grey-darker is-shadowless is-size-3 has-text-grey-light mb-4">
+                        <div class="card-content">
+                           <div class="content">
+                              <p>Engineering</p>
+                           </div>
+                           ${engineers}
+                        </div>
+                     </div>
                   </div>
                </div>
    
                <!-- Intern column -->
                <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
-                  <div class="tile is-child is-size-3 has-text-centered has-background-grey-dark has-text-grey-light">
-                     <p>Intern(s)</p>
-                  </div>
-                  <div class="tile is-child has-background-grey-dark">
-                     ${interns}
+                  <div class="card has-background-grey-dark is-shadowless has-text-centered">
+                     <div class="card has-background-grey-darker is-shadowless is-size-3 has-text-grey-light mb-4">
+                        <div class="card-content">
+                           <div class="content">
+                              <p>Interns</p>
+                           </div>
+                           ${interns}
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -202,8 +212,8 @@ function generateHTML (input) {
          <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
       </body>
    </html>
-   `
+   `)
 
 }
 
-module.exports = generateEmp, generateHTML;
+module.exports = {generateEmp, generateHTML};
