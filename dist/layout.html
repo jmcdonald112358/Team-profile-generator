@@ -1,102 +1,194 @@
-<!DOCTYPE html>
-<html class="has-background-grey-dark">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Team Profiles</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-   </head>
+//This file was used for working through the layout to use in the script template; its contents are just junk data for the sake of seeing how things look
 
-   <body>
-      <nav class="navbar has-background-danger-dark is-justify-content-center mb-5">
-         <!-- <div class="navbar-brand"> -->
+   <!DOCTYPE html>
+   <html class="has-background-grey-dark">
+      <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>Team Profiles</title>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+      </head>
+   
+      <body>
+         <nav class="navbar has-background-danger-dark is-justify-content-center mb-5">
             <div class="navbar-item is-size-1 has-text-dark">
                <span>My Team</span>
             </div>
-         <!-- </div> -->
-      </nav>
-      
-      <div class="container is-fluid">
-         <div class="tile is-ancestor mb-6">
-            <!-- Manager column -->
-            <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
-               <div class="tile is-child is-size-3 has-text-centered has-background-grey-dark has-text-grey-light">
-                  <p>Manager(s)</p>
+         </nav>
+         
+         <div class="container is-fluid">
+            <div class="tile is-ancestor mb-6">
+
+               <!-- Manager column -->
+               <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
+                  <div class="card has-background-grey-dark is-shadowless has-text-centered">
+                     <div class="card has-background-grey-darker is-shadowless is-size-3 has-text-grey-light mb-4">
+                        <div class="card-content">
+                           <div class="content">
+                              <p>Management</p>
+                           </div>
+                           
+         <div class="card has-background-info-dark has-text-left is-size-5 mb-4">
+            <header class="card-header">
+               <p class="card-header-title">
+                  <span class="icon is-size-3 mr-4">
+                     <i class="fas fa-user-tie"></i>
+                  </span>
+                  <span class="has-text-dark is-size-4">Jman</span>
+               </p>
+            </header>
+            <div class="card-content">
+               <div class="content">
+                  <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">jman</span></p>
+                  <p><strong>Office Number:</strong> &nbsp; <span class="has-text-grey-light">42</span></p>
+                  <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">1</span></p>
                </div>
-               <div class="tile is-child has-background-grey-dark">
-                  <div class="card has-background-info-dark">
-                     <header class="card-header">
-                        <p class="card-header-title">
-                           <span class="icon is-size-3 mr-4">
-                              <i class="fas fa-user-tie"></i>
-                           </span>
-                           <span class="has-text-dark is-size-4">John Smith</span>
-                        </p>
-                     </header>
-                     <div class="card-content">
-                        <div class="content">
-                           <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">sometest@test.com</span></p>
-                           <p><strong>Office Number:</strong> &nbsp; <span class="has-text-grey-light">42</span></p>
-                           <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">1</span></p>
+            </div>
+         </div>
+         
+         <div class="card has-background-info-dark has-text-left is-size-5 mb-4">
+            <header class="card-header">
+               <p class="card-header-title">
+                  <span class="icon is-size-3 mr-4">
+                     <i class="fas fa-user-tie"></i>
+                  </span>
+                  <span class="has-text-dark is-size-4">kman</span>
+               </p>
+            </header>
+            <div class="card-content">
+               <div class="content">
+                  <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">kman</span></p>
+                  <p><strong>Office Number:</strong> &nbsp; <span class="has-text-grey-light">21</span></p>
+                  <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">2</span></p>
+               </div>
+            </div>
+         </div>
+         
+         <div class="card has-background-info-dark has-text-left is-size-5 mb-4">
+            <header class="card-header">
+               <p class="card-header-title">
+                  <span class="icon is-size-3 mr-4">
+                     <i class="fas fa-user-tie"></i>
+                  </span>
+                  <span class="has-text-dark is-size-4">mloos</span>
+               </p>
+            </header>
+            <div class="card-content">
+               <div class="content">
+                  <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">mloos</span></p>
+                  <p><strong>Office Number:</strong> &nbsp; <span class="has-text-grey-light">13</span></p>
+                  <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">3</span></p>
+               </div>
+            </div>
+         </div>
+         
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-
-            <!-- Engineer column -->
-            <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
-               <div class="tile is-child is-size-3 has-text-centered has-background-grey-dark has-text-grey-light">
-                  <p>Engineer(s)</p>
+   
+               <!-- Engineer column -->
+               <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
+                  <div class="card has-background-grey-dark is-shadowless has-text-centered">
+                     <div class="card has-background-grey-darker is-shadowless is-size-3 has-text-grey-light mb-4">
+                        <div class="card-content">
+                           <div class="content">
+                              <p>Engineering</p>
+                           </div>
+                           
+         <div class="card has-background-success-dark has-text-left is-size-5 mb-4">
+            <header class="card-header">
+               <p class="card-header-title">
+                  <span class="icon is-size-3 mr-4">
+                     <i class="fas fa-users-cog"></i>
+                  </span>
+                  <span class="has-text-dark is-size-4">rallen</span>
+               </p>
+            </header>
+            <div class="card-content">
+               <div class="content">
+                  <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">rallen</span></p>
+                  <p><strong>Github:</strong> &nbsp; <span class="has-text-grey-light">rallen</span></p>
+                  <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">4</span></p>
                </div>
-               <div class="tile is-child has-background-grey-dark">
-                  <div class="card has-background-success-dark">
-                     <header class="card-header">
-                        <p class="card-header-title">
-                           <span class="icon is-size-3 mr-4">
-                              <i class="fas fa-users-cog"></i>
-                           </span>
-                           <span class="has-text-dark is-size-4">Jimmy Engiee</span>
-                        </p>
-                     </header>
-                     <div class="card-content">
-                        <div class="content">
-                           <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">jimmy@test.com</span></p>
-                           <p><strong>Github:</strong> &nbsp; <span class="has-text-grey-light">jimmyeng21</span></p>
-                           <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">2</span></p>
+            </div>
+         </div>
+         
+         <div class="card has-background-success-dark has-text-left is-size-5 mb-4">
+            <header class="card-header">
+               <p class="card-header-title">
+                  <span class="icon is-size-3 mr-4">
+                     <i class="fas fa-users-cog"></i>
+                  </span>
+                  <span class="has-text-dark is-size-4">vika</span>
+               </p>
+            </header>
+            <div class="card-content">
+               <div class="content">
+                  <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">vmish</span></p>
+                  <p><strong>Github:</strong> &nbsp; <span class="has-text-grey-light">vmish</span></p>
+                  <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">5</span></p>
+               </div>
+            </div>
+         </div>
+         
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-
-            <!-- Intern column -->
-            <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
-               <div class="tile is-child is-size-3 has-text-centered has-background-grey-dark has-text-grey-light">
-                  <p>Intern(s)</p>
+   
+               <!-- Intern column -->
+               <div class="tile is-4 has-background-grey-dark is-vertical is-parent">
+                  <div class="card has-background-grey-dark is-shadowless has-text-centered">
+                     <div class="card has-background-grey-darker is-shadowless is-size-3 has-text-grey-light mb-4">
+                        <div class="card-content">
+                           <div class="content">
+                              <p>Interns</p>
+                           </div>
+                           
+         <div class="card has-background-warning-dark has-text-left is-size-5 mb-4">
+            <header class="card-header">
+               <p class="card-header-title">
+                  <span class="icon is-size-3 mr-4">
+                     <i class="fas fa-id-badge"></i>
+                  </span>
+                  <span class="has-text-dark is-size-4">jesca</span>
+               </p>
+            </header>
+            <div class="card-content">
+               <div class="content">
+                  <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">jessay</span></p>
+                  <p><strong>School:</strong> &nbsp; <span class="has-text-grey-light">UVU</span></p>
+                  <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">6</span></p>
                </div>
-               <div class="tile is-child has-background-grey-dark">
-                  <div class="card has-background-warning-dark">
-                     <header class="card-header">
-                        <p class="card-header-title">
-                           <span class="icon is-size-3 mr-4">
-                              <i class="fas fa-id-badge"></i>
-                           </span>
-                           <span class="has-text-dark is-size-4">Bob Saget</span>
-                        </p>
-                     </header>
-                     <div class="card-content">
-                        <div class="content">
-                           <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">baget@test.com</span></p>
-                           <p><strong>School:</strong> &nbsp; <span class="has-text-grey-light">U of U</span></p>
-                           <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">3</span></p>
+            </div>
+         </div>
+         
+         <div class="card has-background-warning-dark has-text-left is-size-5 mb-4">
+            <header class="card-header">
+               <p class="card-header-title">
+                  <span class="icon is-size-3 mr-4">
+                     <i class="fas fa-id-badge"></i>
+                  </span>
+                  <span class="has-text-dark is-size-4">Bobby</span>
+               </p>
+            </header>
+            <div class="card-content">
+               <div class="content">
+                  <p><strong>Email:</strong> &nbsp; <span class="has-text-grey-light">baget</span></p>
+                  <p><strong>School:</strong> &nbsp; <span class="has-text-grey-light">U of U</span></p>
+                  <p><strong>Employee ID:</strong> &nbsp; <span class="has-text-grey-light">7</span></p>
+               </div>
+            </div>
+         </div>
+         
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
-      <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-   </body>
-</html>
+         <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+      </body>
+   </html>
+   
